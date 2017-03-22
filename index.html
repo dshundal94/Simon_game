@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  
+  <title>Simon Game</title>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body id = 'home'>
+  <header>
+    <div id = "top">
+    <h1 id = "title">SIMON GAME</h1>
+    <a rel="nofollow" rel="noreferrer"id = "logo" href = "https://www.linkedin.com/in/damanjithundal/" target = "_blank">by Damanjit Hundal</a>
+    </div>
+    
+    <div id="circle">
+      <button id="green" class="quarter enableButton" onClick="addToPlayer(this.id)"></button>
+      <button id="red" class="quarter enableButton" onClick="addToPlayer(this.id)"></button>
+      <button id="yellow" class="quarter enableButton" onClick="addToPlayer(this.id)"></button>
+      <button id="blue" class="quarter enableButton" onClick="addToPlayer(this.id)"></button>
+    </div>
+    <div id = "display">1</div>
+    
+    <div id = "start">
+      <button id = "resetButton" onClick="clearGame()">RESET</button>
+      <button id = "strict" onClick="strict()">STRICT</button>
+    </div>
+    
+  </header>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
